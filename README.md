@@ -1,12 +1,12 @@
-# Condicionals (Conditionals)
+# Matrius (Arrays)
 
-En aquest repositori practicaràs declaracions condicionals `if/else`, declaracions condicionals imbricades (nested conditionals) i múltiples condicionals.
+En aquest repositori aprendràs a escriure i fer servir _arrays_.
 
 ## Objectius
 
-- Fer servir les següents paraules clau: `if`, `else`, `else if`.
-- Fer servir condicionals imbricats (nested conditionals).
-- Fer servir els operadors: (&&) (||) (!).
+- Afegir (add), actualitzar (update), recuperar (retrieve) i eliminar (delete) valors d'un _array_.
+- Calcular la llargada (length) d'un _array_.
+- Fer servir mètodes com .pop, .push, .shift i .unshift.
 
 ## Requisits bàsics
 
@@ -35,7 +35,7 @@ Respondre totes les preguntes del fitxer `challenges.js`.
 
 ## Recursos
 
-- [https://blog.mariusschulz.com/2016/05/25/the-andand-and-operator-in-javascript](https://blog.mariusschulz.com/2016/05/25/the-andand-and-operator-in-javascript)
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## Notes
 
