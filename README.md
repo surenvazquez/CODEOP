@@ -1,12 +1,11 @@
-# Objectes (objects)
+# Bucles (Loops)
 
-A aquest repositori practicaràs els conceptes bàsics dels objectes.
+En aquest repositori aprendràs a escriure i fer servir bucles (loops).
 
 ## Objectius
 
-- Crear objectes
-- Afegir (add), actualitzar (update), recuperar (retrieve) i eliminar (delete) claus/valors (keys/values).
-- Fer servir objectes imbricats (nested objects).
+- Fer servir comptadors (counters), condicions i iteradors als _loops_.
+- Crear un _loop_ "do while", un _loop_ "while" i un _loop_ "for".
 
 ## Requisits bàsics
 
@@ -35,7 +34,8 @@ Respondre totes les preguntes del fitxer `challenges.js`.
 
 ## Recursos
 
-- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [https://www.dofactory.com/tutorial/javascript-loops](https://www.dofactory.com/tutorial/javascript-loops)
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
 ## Notes
 

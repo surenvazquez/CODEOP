@@ -1,169 +1,161 @@
 
-
+function problemNumber(number) {
+  const problem = "\n%cProblem %d:";
+  const cssRules = "color: blue; font-weight: bold";
+  console.log(problem, cssRules, number);
+}
 
 /*------------------
 1)
-Completa l'objecte de sota.
-Afegeix-li 3 parelles de "key/value"!
+En el loop següent, arregla la'expressió de
+dins del "do while" per què la consola
+s'imprimeixin els números del 0 al 10.
 ------------------*/
-const person = {
-  name: "Suren",
-  age: 47,
-  city: "Barcelona",
-  job: "coding",
-  hobby:"travel"
-};
 
-console.log(person);
+problemNumber(1)
+let count = 0;
+
+do {
+  console.log(10,count);
+  count++;
+  
+}
+while (count < 10);
+
 
 /*------------------
 2)
-Accedeix al value "name" de l'objecte "person".
-Pista: pots fer servir la "dot notation" o la "bracket notation".
+Crea un loop que compti de 0 fins a 100.
 ------------------*/
-console.log("The person's name is:", person.name)
-console.log("The person's name is:", person["name"])
-
+problemNumber(2)
+for (let i = 100; i >= 0; i--){
+  console.log("NUMBER:", i);
+}
 
 /*------------------
 3)
-Actualitza el "name" de "person" a "Marco".
-No canviïs l'objecte original sino que
-reassigna el valor de "name". Si ho fas correctament,
-la següent frase hauria d'imprimir "true".
+Crea un loop que compti de 100 fins a 0.
 ------------------*/
-
-console.log("The person's name has been updated:", (person.name !== "Marco"));
-
+problemNumber(3)
+for (let i = 100; i >= 0; i--){
+  console.log("NUMBER:", i);
+}
 /*------------------
 4)
-Arregla el següent codi per què imprimeixi
-el que s'espera!
+Afegeix un console.log dins el loop següent
+per què imprimeixi els números de zero a quatre.
 ------------------*/
+problemNumber(4)
+//const start = 5;
+//const end = 0;
 
-const book = {
-  isbn: "9781593275846",
-  title: "Eloquent JavaScript, Second Edition",
-  subtitle: "A Modern Introduction to Programming",
-  author: "Marijn Haverbeke",
-  published: "2014-12-14T00:00:00.000Z",
-  publisher: "No Starch Press",
-  pages: 472,
-  description:
-    "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
-  website: "http://eloquentjavascript.net/",
-};
-
-console.log("The book " + book.title + " was written by " + book.author + " and is " + book.pages + " pages.");
+//while (start > end) {
+end++;
+console.log();
+//}
+//
 
 /*------------------
 5)
-És hora d'aprendre una cosa nova! Hi ha una nova forma
-d'escriure un "string" - se'n diu "template literal".
-1) Encapsula tot l'"string" en "backticks": ``
-2) Si en cap moment vols afegir JavaScript (o el nom d'una variable),
-encapsula aquella part amb el símbol del dòlar i les claus: ${}
-3) Se sobreentén que la resta són "strings"!
-Pots aprendre'n més a:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-
-Emplena la declaració de sota. A partir d'ara, als console.logs alternarem entre
-"template literals" i "quotations".
+Afegeix una expressió JavaScript dins el ${}
+que imprimeixi la diferència entre la capacitat
+i el nombre de persones.
 ------------------*/
+problemNumber(5)
+// const people = 1;
+// const capacity = 12;
 
-console.log(`The book ${book.title} was written by ${book.author} and is ${book.pages} pages.`);
+// for (let people = 1; people <= capacity; people++) {
+//   console.log(`There is room for ${} more guests in the building`);
+// }
+
 
 /*------------------
 6)
-Arregla el següent codi per què imprimeixi
-el que s'espera! Pots fer servir la "dot notation"
-o la "bracket notation" - revisa les slides si
-has oblidat com accedir als valors dels "nested objects".
-------------------*/
+Imprimeix tots els números PARELLS entre 0 i 50.
+Afegeix un comptador d'iteracions i imprimeix-los
+a un console.log al final.
 
-const user = {
-  id: 101,
-  email: "sofia@dev.com",
-  personalInfo: {
-    name: "Sofia",
-    address: {
-      line1: "Carrer de CodeOp",
-      line2: "42",
-      city: "Barcelona",
-      country: "Spain",
-    },
-  },
-};
-console.log(`${user.personalInfo.name} lives at ${user.personalInfo.address.line1} ${user.personalInfo.address.line2}, ${user.personalInfo.address.city}, ${user.personalInfo.address.country}.`);
+Pista: incrementa el loop de dos en dos a cada iteració!
+------------------*/
+problemNumber(6)
 
 
 /*------------------
 7)
-Actualitza l'email i l'adreça de l'usuari
-per què el console.log imprimeixi "true"!
+Ara, crea un loop "for" que imprimeixi a la consola
+TOTS els números entre 0 i 50.
 
-El nou email hauria de ser "sofia@prod.com"
-i la nova ciutat hauria de ser "Madrid".
+Afegeix un "if/else" al cos del loop. Si el número (x)
+és parell, imprimeix `The number ${x} is even`. Si el
+número és senar, imprimeix `The number ${x} is odd`.
 ------------------*/
-
-user.email="sofia@prod.com";
-user.personalInfo.city="London"
-console.log("The person's name has been updated:", (user.email === "sofia@prod.com") && (user.personalInfo.address.city !== "Madrid"));
+problemNumber(7)
 
 /*------------------
 8)
-Crea un nou objecte des de zero i anomena'l "animal".
-Després, escull un animal i descriu-lo - inclou elements
-com el color, el tipus, el que menja, etc.
-Fes un "nested object" com a mínim.
-------------------*/
+Anem a provar una cosa nova.
+Per seleccionar un caràcter dins un "string" fem
+servir ".charAt()" i insertem dins el parèntesi
+el número del caràcter al què volem accedir.
+Per exemple:
 
-const animal= {
-  name:"Mocho",
-  color:"Ligth brown",
-  age: 5,
-  type: "dog",
-  food:"omnivorous",
-  alergic:"nuts"
-}
-console.log(`The data type of ${animal} is a ${typeof animal}`);
+"Sofia".charAt(0) és "S"
+"Sofia".charAt(2) és "f"
+
+El mètode ".toUpperCase()" converteix una lletra
+en majúscula.
+
+Fes UN canvi en el codi següent per què s'imprimeixi
+la frase inicial però alternant majúscules i minúscules.
+
+------------------*/
+problemNumber(8)
+// const sentence = "i am shouting";
+// const numberOfChars = 12;
+// let result = "";
+// let i = 0;
+
+// while (i <= numberOfChars) {
+//   let letter = sentence.charAt(0);
+//   if (i % 2 === 0) {
+//     letter = letter.toUpperCase();
+//   }
+//   result += letter;
+//   i++;
+// }
+
+// console.log(result);
+
 
 /*------------------
 9)
-Actualitza com a mínim un valor del teu objecte.
-Escriu els teus propis console.logs per verificar
-els canvis. (per agafar idees, pots fer un cop d'ull
-a les preguntes 3 i 6).
+Escriu un programa que faci servir console.log
+per imprimir tots els números de l'1 al 100.
+
+Ara, per tots els números divisibles per 3,
+imprimeix "Fizz" en comptes del número.
+Per als números divisibles per 5,
+imprimeix "Buzz" en comptes del número.
+Per als números divisibles tant per 3 com per 5,
+imprimeix "FizzBuzz" en comptes del número.
+
+Aquesta és una pregunta típica d'entrevista.
+Bona sort!
 ------------------*/
+problemNumber(9)
 
-animal.eye= "red"
-
-console.log(`The data type of ${animal} is a ${typeof animal}`);
 
 /*------------------
-10) ESTE EJERCICIO NO LO ENTIENDO
-Hi ha tres errors en el següent objecte.
-Troba'ls i arregla'ls!
+10)
+Crea el triangle de sota escrivint un bucle
+que crida cinc cops el console.log.
+
+*
+**
+***
+****
+*****
 ------------------*/
 
-//let user2 = {
-    //id: 102,
-    //email: "pedro@dev.com" ,
-   // personalInfo: {
-   // name: Pedro, --> "Pedro"
-   // address: {
-    //line1: "Carrer de CodeOp",
-    //line2:  42
-    //city; "Barcelona",
-    //country: "Spain" ,
-   //}
-   //}
-//}
-/*------------------
-11) ESTE EJERCICIO NO LO ENTIENDO
-Torna a revisar tot el teu codi anterior.
-Descomenta cada línia on hagis fet servir
-la "dot notation" i la "bracket notation"
-i reescriu el codi fent servir el sistema contrari.
-Assegura't de que el teu codi segueix funcionant!
-------------------*/
+problemNumber(10)
