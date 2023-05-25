@@ -1,12 +1,12 @@
-# Recórrer matrius (Looping through Arrays)
+# Condicionals (Conditionals)
 
-En aquest repositori practicaràs les formes de recórrer _arrays_ fent servir _loops_.
+En aquest repositori practicaràs declaracions condicionals `if/else`, declaracions condicionals imbricades (nested conditionals) i múltiples condicionals.
 
 ## Objectius
 
-- Recórrer _arrays_.
-- Recórrer _arrays_ imbricats (nested arrays).
-- Recórrer un fitxer JSON.
+- Fer servir les següents paraules clau: `if`, `else`, `else if`.
+- Fer servir condicionals imbricats (nested conditionals).
+- Fer servir els operadors: (&&) (||) (!).
 
 ## Requisits bàsics
 
@@ -35,7 +35,7 @@ Respondre totes les preguntes del fitxer `challenges.js`.
 
 ## Recursos
 
-- [https://www.youtube.com/watch?v=N9uDAFeQOeg](https://www.youtube.com/watch?v=N9uDAFeQOeg)
+- [https://blog.mariusschulz.com/2016/05/25/the-andand-and-operator-in-javascript](https://blog.mariusschulz.com/2016/05/25/the-andand-and-operator-in-javascript)
 
 ## Notes
 

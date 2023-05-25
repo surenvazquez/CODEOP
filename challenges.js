@@ -1,184 +1,241 @@
-/*------------------
-1)
-El següent codi imprimeix l'índex de l'array "person".
-Modifica'l per què imprimeixi els valors de l'array.
-------------------*/
-const person = ["Sofia", 30, "Barcelona", true];
-
-for (let i = 0; i < person.length; i++) {
-  console.log(i);
+/** Helper function code */
+function problemNumber(number) {
+  const problem = "\n%cProblem %d:";
+  const cssRules = "color: blue; font-weight: bold";
+  console.log(problem, cssRules, number);
 }
 
-/*------------------
+// El teu exercici comença aquí:
+
+/*
+1)
+Completa aquest codi per què "getDrink" sigui "true"
+quan "thirsty" sigui "true", i que "getDrink" sigui
+"false" quan "thirsty" sigui "false".
+
+Pista per provar el teu codi:
+console.log(thirsty, " should equal ", getDrink);
+*/
+
+problemNumber(1);
+
+const thirsty = true;
+let getDrink = null;
+
+if (thirsty === false) {
+  getDrink=false;
+  // if (x === y) {
+
+i
+}
+
+/*
 2)
-Escriu un loop que imprimeixi tots els valors de "pet".
-------------------*/
+Canvia la variable "light" a "red", després "green",
+després "yellow" i comprova el què s'imprimeix. Ara canvia
+la variable a "purple". Què succeeix?
+Canvia el codi per què només "green" digui "Go.", "red" digui "Stop!"
+i "yellow" digui "Wait...". Amb les teves modificacions, quan
+s'introdueixi qualsevol altra paraula ha de dir "Light malfunction".
 
-const pet = ["Spot", 2, "dog", "spotted"];
+Pista pel test:
+console.log("light is ", light, " so car should ", driveCar);
 
-/*------------------
+*/
+problemNumber(2);
+
+const light = null;
+let driveCar = null;
+if (light === "red") {
+  driveCar = "Stop!";
+} else if (light === "yellow") {
+  driveCar = "Wait...";
+} else {
+  driveCar = "Go.";
+}
+console.log("light is ", light, " so car should ", driveCar);
+/*
 3)
-Crea un array anomenat "features" i afegeix-hi
-un mínim de quatre elements.
+Escriu el codi per a la següent situació:
+Si la temperatura baixa de 15 graus,
+la persona s'hauria de posar un jersei.
 
-Després, imprimeix totes les 'features' en UN sol
-string en comptes de cadascun per separat.
-Fes servir un loop que afegeixi cada valor a
-l'string "carFeatures".
+*/
+problemNumber(3);
 
-Bonus: afegeix una coma entre cadascuna de les
-'features' per què quan s'imprimeixi sembli una
-frase real.
-------------------*/
-
-// el teu array aquí
-const carFeatures = "The features of the car are: ";
-
-// el teu loop aquí
-
-// console.log(carFeatures);
-
-/*------------------
+/*
 4)
-Escriu un loop que imprimeixi tots els elements
-de l'array "nums" en ordre invers. És a dir,
-començant pel 10 i acabant amb el 0.
-------------------*/
+Defineix un número i comprova si és parell o senar.
+*/
+problemNumber(4);
 
-const nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let number = null;
+let type = null;
+if (number % 2 == 0) {
+  type = "par";
+ } else {
+   type = "impar";
+ }
+ console.log(number, "es", type);
 
-/*------------------
+/*
 5)
-Crea un 'nested loop' que imprimeixi els números
-de "gridNum" per ordre.
-------------------*/
+Escriu el codi per a la següent situació:
+Si la persona és vegana, les seves restriccions
+alimentàries són "no meat or dairy".
+Si la persona és vegetariana, les seves restriccions
+alimentàries són "no meat".
+Si la persona no és cap de les anteriors,
+no te cap restricció alimentària (null).
+*/
+problemNumber(5);
 
-let gridNum = [[1, 2, 3], [4, 5], [6, 7, 8, 9], [10]];
-
-/*------------------
+const vegan = false;
+const vegetarian = true;
+let restrictions = null
+ if (vegan) {
+  restrictions = "no meat or dairy";
+} else if (vegetarian) {
+   restrictions = "no meat"
+} 
+ console.log("the restrictions of the persone are",restrictions)
+/*
 6)
-Escriu un loop que imprimeixi els noms dels
-següents Pokémons.
-------------------*/
-const pokemon = [
-  {
-    pkdx_id: 1,
-    name: "Bulbasaur",
-    description:
-      "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
-    types: ["poison", "grass"],
-  },
-  {
-    pkdx_id: 2,
-    name: "Ivysaur",
-    description:
-      "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
-    types: ["poison", "grass"],
-  },
-  {
-    pkdx_id: 3,
-    name: "Venusaur",
-    description:
-      "There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.",
-    types: ["poison", "grass"],
-  },
-  {
-    pkdx_id: 4,
-    name: "Charmander",
-    description:
-      "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
-    types: ["fire"],
-  },
-];
+Depura el següent codi.
+Necessitaràs canviar els valor de "x",
+"y" i "z" per trobar l'error!
 
-/*------------------
+text output:
+console.log(answer);
+*/
+problemNumber(6);
+
+const x = 1;
+const y = 2;
+const z = 3;
+var answer = "null";
+
+if (x === z) {
+  if (x === y) {
+    answer = "all are equal";
+  } else {
+    answer = "x and y are equal";
+  }
+} else if (x === z) {
+  answer = "x and z are equal";
+} else if (y === z) {
+  answer = "y and z are equal";
+} else {
+  answer = "all are different";
+}
+console.log(answer);
+/*
 7)
-Ara, crea un 'nested loop' que imprimeixi tots
-els "types" de l'array de Pokémons.
-------------------*/
+Completa aquest codi!
+Elimina el "true" de la declaració condicional
+i fes servir les variables "eatsMeat" i "eatsDairy"
+i l'operador "&&"!
 
-/*------------------
+text output:
+console.log(diet);
+*/
+problemNumber(7);
+
+const eatsMeat = false;
+const eatsDairy = false;
+let diet = null;
+
+if (eatsDairy) {
+  diet = "vegan";
+} else if (eatsMeat && (eatsMeat == false)) {
+  diet = "vegetarian";
+} else {
+  diet = "no dietary restrictions";
+}
+if (eatsMeat == true && eatsDairy === false) {
+  diet = "vegan";
+} else if (eatsMeat && (eatsMeat == false)) {
+  diet = "vegetarian";
+} else {
+  diet = "no dietary restrictions";
+}
+console.log(diet);
+/*
 8)
-Crea un loop que imprimeixi les següents lletres en
-ordre alfabètic (necessitaràs tres 'nested loops').
+Escriu el codi per a la següent situació:
+La Sofia sap conduir cotxes de canvi manual.
+El Diego només sap conduir cotxes automàtics.
+La Sofia prefereix conduir distàncies llargues (> 10 km).
+El Diego prefereix conduir distàncies curtes.
 
-Intenta fer l'exercici SENSE mirar les slides.
-------------------*/
+text output:
+console.log("The car is ", car, " and the distance is ", distance, "km, so the driver is: ", driver);
+*/
+problemNumber(8);
 
-let letters = [
-  [["A"], ["B"], ["C"]],
-  [["D"], ["E"], ["F"]],
-  [["G"], ["H"], ["I"]],
-];
+const car = "manual";
+const driver = null;
+const distance = 12;
 
-/*------------------
+if (car == "manual" || distance > 10) {
+  driver = "sofia";
+} else {
+  diver = "diego";
+}
+console.log("The car is ", car, " and the distance is ", distance, "km, so the driver is: ", driver);
+/*
 9)
-Crea un 'nested loop' que afegeixi cada adreça
-a l'array "allAdress". En comptes d'afegir-les
-com a objectes però, recorre cadascun dels objectes
-per concatenar els seus valors en un string.
+Completa aquest codi!
+Actualitza "canVote" al següent:
+- "Input is not a number" si l'edat no és un número
+(fes servir "typeof" per comprovar-ho - mira la documentació MDN)
+- "Legal voting age" si l'edat és com a mínim 18 anys
+- "Too young" si és més jove de 18 anys
 
-El teu resultats hauria de ser com aquest:
-["Carrer de CodeOp 42 Barcelona Spain", "Carrer de Tech 200 Madrid Spain", "Carrer de JSON Seville Spain"]
+text output:
+console.log(canVote);
+*/
+problemNumber(9);
 
-Pista: intenta crear una variable entre els loops
-per emmagatzemar cada adreça com a string abans
-d'introduir-la a l'array "allAdress".
-------------------*/
+const age = 16;
+let canVote = null;
 
-let allAddress = [];
-
-const addressList = [
-  {
-    line1: "Carrer de CodeOp",
-    line2: 42,
-    city: "Barcelona",
-    country: "Spain",
-  },
-  {
-    line1: "Carrer de Tech",
-    line2: 200,
-    city: "Madrid",
-    country: "Spain",
-  },
-  {
-    line1: "Carrer de JSON",
-    line2: 22,
-    city: "Seville",
-    country: "Spain",
-  },
-];
-
-// el teu codi aquí
-
-// console.log(allAddress);
-
-/*------------------
+/*
 10)
-Crea una 'to do list' per cada dia de la setmana.
+Elimina els "nested conditionals" del següent codi
+a partir de l'ordre de les operacions.
+També has d'afegir la condició de temperatura
+entre 15 i 30 graus (hauria de ser "warm").
 
-El teu resultat hauria de ser un array d'strings
-com aquest:
+text output:
+console.log("The temp is ", temp, ", so the weather is ", weather);
+*/
+problemNumber(10);
 
-["Sunday's chores are: nothing.", "Monday's chores are: tidying, vacuuming, dishes.", "Tuesday's chores are: nothing.", (etcetera)]
+let temp;
 
-Pista: per aconseguir aquest resultat hauràs de
-combinar moltes de les coses que hem après a les
-activitats anteriors. Revisa-les si ho necessites!
-------------------*/
+if (temp < 15) {
+  if (temp < 0) {
+    weather = "freezing";
+  } else {
+    weather = "chilly";
+  }
+} else if (temp > 30) {
+  weather = "hot";
+}
+console.log("The temp is ", temp, ", so the weather is ", weather);
+/*
+11)
+Descomenta tot el teu codi anterior.
+- Reescriu el problema 3 i 4 fent servir "ternary operators".
+- Reescriu també el problema 9 fent servir "ternary operators".
+Fes-ho per les següents dues situacions:
+  a) pots assumir que el tipus de "age" serà "number" i per tant
+  no cal fer la comprovació.
+  b) comprova el tipus de "age" tal i com està a l'exercici original.
+  En aquest cas necessitaràs ajuntar dos "ternary operators".
+  Quin creus que és el codi més net (clean code) que la teva
+  resposta original al problema 9?
 
-let daysOfWeek = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-let chores = {
-  monday: ["tidying", "vacuuming", "dishes"],
-  wednesday: ["laundry", "bills"],
-  friday: ["dusting", "lawncare"],
-};
+*/
+problemNumber(11);
