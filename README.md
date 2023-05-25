@@ -1,11 +1,12 @@
-# Bucles (Loops)
+# Recórrer matrius (Looping through Arrays)
 
-En aquest repositori aprendràs a escriure i fer servir bucles (loops).
+En aquest repositori practicaràs les formes de recórrer _arrays_ fent servir _loops_.
 
 ## Objectius
 
-- Fer servir comptadors (counters), condicions i iteradors als _loops_.
-- Crear un _loop_ "do while", un _loop_ "while" i un _loop_ "for".
+- Recórrer _arrays_.
+- Recórrer _arrays_ imbricats (nested arrays).
+- Recórrer un fitxer JSON.
 
 ## Requisits bàsics
 
@@ -34,8 +35,7 @@ Respondre totes les preguntes del fitxer `challenges.js`.
 
 ## Recursos
 
-- [https://www.dofactory.com/tutorial/javascript-loops](https://www.dofactory.com/tutorial/javascript-loops)
-- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+- [https://www.youtube.com/watch?v=N9uDAFeQOeg](https://www.youtube.com/watch?v=N9uDAFeQOeg)
 
 ## Notes
 
