@@ -1,443 +1,146 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="challenges.css">
-  <title>Flexbox</title>
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
+
+
+<!-- page -->
+
+<main class="min-h-screen w-full bg-gray-100 text-gray-700" x-data="layout">
+  
+    <!-- header page -->
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container pt-2">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="30" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <img src="img/Captura.PNG" alt="">
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-secondary"></a></li>
+              <li><a href="#" class="nav-link px-2 link-dark"></a></li>
+              <li><a href="#" class="nav-link px-2 link-dark"></a></li>
+              <li><a href="#" class="nav-link px-2 link-dark"></a></li>
+            </ul>
+
+            <form class="col-10 col-lg-auto mb-6 mb-lg-0 me-lg-5 flex-wrap flex content align-items-center">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search"> 
+            </form>
+
+            <div class="dropdown text-end">
+                <img src="suren.jpeg" alt="mdo" width="32" height="32" class="rounded-circle">
+                <button type="button" class="btn btn-danger">New post</button>
+            </div>      
+      </header>
+
+
+        <!-- logo -->
+
+   
+        <!-- button profile -->
+        <div>
+            <button type="button" @click="profileOpen = !profileOpen" @click.outside="profileOpen = false"
+                class="h-9 w-9 overflow-hidden rounded-full">
+                <img src="suren.jpeg" alt="suren" />
+            </button>
+
+            <!-- dropdown profile -->
+            <div class="absolute right-2 mt-1 w-48 divide-y divide-gray-200 rounded-md border border-gray-200 bg-white shadow-md"
+                x-show="profileOpen" x-transition>
+                <div class="flex items-center space-x-2 p-2">
+                    <img src="suren.jpeg" alt="suren.jpeg" class="h-9 w-9 rounded-full" />
+                    <div class="font-medium">Suren Vázquez</div>
+                </div>
+
+                <div class="flex flex-col space-y-3 p-2">
+                    <a href="#" class="transition hover:text-blue-600">My Profile</a>
+                    <a href="#" class="transition hover:text-blue-600">Edit Profile</a>
+                    <a href="#" class="transition hover:text-blue-600">Settings</a>
+                </div>
+
+                <div class="p-2">
+                    <button class="flex items-center space-x-2 transition hover:text-blue-600">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                            </path>
+                        </svg>
+                        <div>Log Out</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div  class="main">
+        <div class="flex-wrap">
+
+
+        </div>
+
+
+
+
+    </div>
+   
+
+        <!-- aside -->
+        <aside class="flex w-72 flex-col space-y-2 border-r-2 border-gray-200 bg-white p-2" style="height: 90.5vh"
+            x-show="asideOpen">
+            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                <span class="text-2xl"><i class="bx bx-home"></i></span>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                <span class="text-2xl"><i class="bx bx-cart"></i></span>
+                <span>Popular</span>
+            </a>
+
+            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                <span class="text-2xl"><i class="bx bx-shopping-bag"></i></span>
+                <span>Communities</span>
+            </a>
+
+            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                <span class="text-2xl"><i class="bx bx-heart"></i></span>
+                <span>My Favourite</span>
+            </a>
+
+            <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                <span class="text-2xl"><i class="bx bx-user"></i></span>
+                <span>Profile</span>
+            </a>
+        </aside>
+
+        <!-- main content page -->
+        <div class="w-full p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quam odit officiis
+            magni doloribus ipsa dolore, dolores nihil accusantium labore, incidunt autem iure quae vitae voluptate,
+            esse asperiores aliquam repellat. Harum aliquid non officiis porro at cumque eaque inventore iure. Modi sunt
+            optio mollitia repellat sed ab quibusdam quos harum!</div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("layout", () => ({
+            profileOpen: false,
+            asideOpen: true,
+        }));
+    });
+</script>
 
 <body>
 
-  <!-- ---------- -->
-  <!-- EXERCICI 1 -->
-  <!-- ---------- -->
-
-  <div class="exercise">
-    <h2 class="title">Exercici 1 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex1">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 2 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 2 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex2">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 3 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 3 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex3">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 4 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 4 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex4">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 5 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 5 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex5">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 6 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 6 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex6">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 7 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 7 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex7">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 8 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 8 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex8">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">4</div>
-        <div class="box box4">5</div>
-        <div class="box box5">6</div>
-        <div class="box box6">3</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 9 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 9 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex9">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">6</div>
-        <div class="box box6">5</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 10 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 10 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex10">
-        <div class="box box1">6</div>
-        <div class="box box2">5</div>
-        <div class="box box3">4</div>
-        <div class="box box4">3</div>
-        <div class="box box5">2</div>
-        <div class="box box6">1</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 11 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 11 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex11">
-        <div class="box box1">6</div>
-        <div class="box box2">5</div>
-        <div class="box box3">4</div>
-        <div class="box box4">3</div>
-        <div class="box box5">2</div>
-        <div class="box box6">1</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 12 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 12 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex12">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 13 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 13 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex13">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 14 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 14 HECHO</h2>
-    <div class="exercise-content">
-      <div class="container ex14">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 15 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 15</h2>
-    <div class="exercise-content">
-      <div class="container ex15">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 16 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 16</h2>
-    <div class="exercise-content">
-      <div class="container ex16">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 17 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 17</h2>
-    <div class="exercise-content">
-      <div class="container ex17">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 18 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 18</h2>
-    <div class="exercise-content">
-      <div class="container ex18">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 19 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 19</h2>
-    <div class="exercise-content">
-      <div class="container ex19">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 20 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 20</h2>
-    <div class="exercise-content">
-      <div class="container ex20">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 21 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 21</h2>
-    <div class="exercise-content">
-      <div class="container ex21">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 22 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 22</h2>
-    <div class="exercise-content">
-      <div class="container ex22">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 23 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 23</h2>
-    <div class="exercise-content">
-      <div class="container ex23">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 24 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 24</h2>
-    <div class="exercise-content">
-      <div class="container ex24">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ---------- -->
-  <!-- EXERCICI 25 -->
-  <!-- ---------- -->
-  <div class="exercise">
-    <h2 class="title">Exercici 25</h2>
-    <div class="exercise-content">
-      <div class="container ex25">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-        <div class="box box6">6</div>
-      </div>
-    </div>
-  </div>
-
+  
 </body>
+
 
 </html>
