@@ -1,0 +1,63 @@
+/* ESTILS BÀSICS */
+
+a {
+  color: #475569;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background-color: #cbd5e1;
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  background-color: #3769b0;
+  color: white;
+  width: 90;
+  height: 50;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* EL TEU CODI AQUÍ */
+
+/* Flex Container */
+
+.flex-container {
+  border: 2px solid white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+
+/* Flex items */
+
+  .flex-container li{
+    flex: 3;
+  }
+
+
+  .flex-container .social{
+    flex-direction: column;
+    flex: 1;
+    }
+  
+
+@media all and (max-width: 1024px) {
+  flex-item-right, .flex-item-left 
+  .flex-container1
+  
+}
+
+@media all and (max-width: 640px) {
+}
