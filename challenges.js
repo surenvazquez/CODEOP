@@ -1,251 +1,169 @@
-/** Helper function code */
-function problemNumber(number) {
-  const problem = "\n%cProblem %d:";
-  const cssRules = "color: blue; font-weight: bold";
-  console.log(problem, cssRules, number);
-}
 
-/*
+
+
+/*------------------
 1)
-console.log imprimirà qualsevol cosa que
-hi hagi entre els parèntesis a la teva consola.
+Completa l'objecte de sota.
+Afegeix-li 3 parelles de "key/value"!
+------------------*/
+const person = {
+  name: "Suren",
+  age: 47,
+  city: "Barcelona",
+  job: "coding",
+  hobby:"travel"
+};
 
-Canvia la frase a imprimir de sota, desa el fitxer,
-i veuràs els canvis al teu navegador.
+console.log(person);
 
-Després de confirmar que funciona, comenta"l.
-
-*/problemNumber(1);
-console.log("hola soy yo");
-
-/*
+/*------------------
 2)
-Fent servir tant l'operador (+) com l'operador (*),
-multiplica i afegeix qualsevol combinació de números
-per aconseguir imprimir el número 10.
-*/
-problemNumber(2);
+Accedeix al value "name" de l'objecte "person".
+Pista: pots fer servir la "dot notation" o la "bracket notation".
+------------------*/
+console.log("The person's name is:", person.name)
+console.log("The person's name is:", person["name"])
 
-console.log(7+3)
-console.log(2*5)
 
-/*
+/*------------------
 3)
-Sovint fem servir console.log per fer `debug` (depurar errors).
-Pots afegir diversos arguments a dins del parèntesi del
-console.log (separant-los amb comes).
-Afegeix el següent dins el console.log!
+Actualitza el "name" de "person" a "Marco".
+No canviïs l'objecte original sino que
+reassigna el valor de "name". Si ho fas correctament,
+la següent frase hauria d'imprimir "true".
+------------------*/
 
-3 + 4, " should equal 7"
-*/
-problemNumber(3);
+console.log("The person's name has been updated:", (person.name !== "Marco"));
 
-console.log(3 + 4)
-
-/*
+/*------------------
 4)
-Afegeix dos `strings` per imprimir
-el teu nom i cognom conjuntament!
-*/
+Arregla el següent codi per què imprimeixi
+el que s'espera!
+------------------*/
 
-problemNumber(4);
-const nombre= "Maya ";
-const apellido= "Vazquez";
-console.log(nombre+apellido)
+const book = {
+  isbn: "9781593275846",
+  title: "Eloquent JavaScript, Second Edition",
+  subtitle: "A Modern Introduction to Programming",
+  author: "Marijn Haverbeke",
+  published: "2014-12-14T00:00:00.000Z",
+  publisher: "No Starch Press",
+  pages: 472,
+  description:
+    "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
+  website: "http://eloquentjavascript.net/",
+};
 
-console.log("Maya Vazquez2")
-console.log("Maya "+"Vazquez3")
- 
+console.log("The book " + book.title + " was written by " + book.author + " and is " + book.pages + " pages.");
 
-/*
+/*------------------
 5)
-L'operador `modulo` (%) ens retorna la resta
-d'una divisió. Si dividim qualsevol número entre 2
-podrem saber si és parell o senar. Prova-ho!
-*/
+És hora d'aprendre una cosa nova! Hi ha una nova forma
+d'escriure un "string" - se'n diu "template literal".
+1) Encapsula tot l'"string" en "backticks": ``
+2) Si en cap moment vols afegir JavaScript (o el nom d'una variable),
+encapsula aquella part amb el símbol del dòlar i les claus: ${}
+3) Se sobreentén que la resta són "strings"!
+Pots aprendre'n més a:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 
-problemNumber(5);
+Emplena la declaració de sota. A partir d'ara, als console.logs alternarem entre
+"template literals" i "quotations".
+------------------*/
 
-console.log(10 % 2)
+console.log(`The book ${book.title} was written by ${book.author} and is ${book.pages} pages.`);
 
-/*
+/*------------------
 6)
-Canvia la ubicació de Mia reassignant la variable
-"currentLocation" amb un nou string!
-Per fer-ho, hauràs d"afegir una nova línia de codi
-(no eliminis cap de les línies de codi).
-Nota: també hauràs de "descomentar" el console.log
-per imprimir la localització.
-*/
+Arregla el següent codi per què imprimeixi
+el que s'espera! Pots fer servir la "dot notation"
+o la "bracket notation" - revisa les slides si
+has oblidat com accedir als valors dels "nested objects".
+------------------*/
 
-problemNumber(6);
-const name = "Mia";
-let currentLocation = "school";
-currentLocation ="the beach";
-console.log("ejercicio7:")
-console.log( name, " is currently at ", currentLocation);
+const user = {
+  id: 101,
+  email: "sofia@dev.com",
+  personalInfo: {
+    name: "Sofia",
+    address: {
+      line1: "Carrer de CodeOp",
+      line2: "42",
+      city: "Barcelona",
+      country: "Spain",
+    },
+  },
+};
+console.log(`${user.personalInfo.name} lives at ${user.personalInfo.address.line1} ${user.personalInfo.address.line2}, ${user.personalInfo.address.city}, ${user.personalInfo.address.country}.`);
 
-/*
+
+/*------------------
 7)
-Crea variables per que el missatge s'imprimeixi
-correctament a la consola!
-*/
-problemNumber(7);
-/** Helper function code */
+Actualitza l'email i l'adreça de l'usuari
+per què el console.log imprimeixi "true"!
 
+El nou email hauria de ser "sofia@prod.com"
+i la nova ciutat hauria de ser "Madrid".
+------------------*/
 
-let person = " Suren"
-let place = "Restaurant"
-let food = " macarrones"
+user.email="sofia@prod.com";
+user.personalInfo.city="London"
+console.log("The person's name has been updated:", (user.email === "sofia@prod.com") && (user.personalInfo.address.city !== "Madrid"));
 
-console.log(person, " went to the ", place, " to eat ", food, ".");
-
-/*
+/*------------------
 8)
-Ara, reassigna totes les variables anteriors per
-imprimir un nou missatge a la consola!
-*/
-problemNumber(8);
+Crea un nou objecte des de zero i anomena'l "animal".
+Després, escull un animal i descriu-lo - inclou elements
+com el color, el tipus, el que menja, etc.
+Fes un "nested object" com a mínim.
+------------------*/
 
-let cohete = "El cohete"
-let Marte = " Marte"
-let aterrizar = "aterrizar"
+const animal= {
+  name:"Mocho",
+  color:"Ligth brown",
+  age: 5,
+  type: "dog",
+  food:"omnivorous",
+  alergic:"nuts"
+}
+console.log(`The data type of ${animal} is a ${typeof animal}`);
 
-console.log(cohete, " vuela a ",  Marte, " para ", aterrizar, ".");
+/*------------------
+9)
+Actualitza com a mínim un valor del teu objecte.
+Escriu els teus propis console.logs per verificar
+els canvis. (per agafar idees, pots fer un cop d'ull
+a les preguntes 3 i 6).
+------------------*/
 
-/*
-9) 
-Existeixen tres formes d'incrementar
-el número emmagatzemat a la variable "count".
-Tot i així, hi ha un problema amb la forma en què
-aquesta variable ha estat declarada. Corregeix-la!
-*/
-problemNumber(9);
+animal.eye= "red"
 
-let count = 0;
-count = count + 1;
-console.log (count)
-count + 1;
+console.log(`The data type of ${animal} is a ${typeof animal}`);
 
-count ++;
-console.log(count, "should be 3");
+/*------------------
+10) ESTE EJERCICIO NO LO ENTIENDO
+Hi ha tres errors en el següent objecte.
+Troba'ls i arregla'ls!
+------------------*/
 
-/*
-10)
-Hora de permutar! Al codi de sota volem intercanviar
-els valors emmagatzemats a "a" i "b".
-
-El codi no funciona correctament. Per assolir aquesta
-tasca hauràs de crear una variable adicional
-(pots anomenar-la "temp") per desar "a" o "b" mentre
-fas la permuta. Fes-te un esquema si ho necessites!
-*/
-problemNumber(10);
-
-let a = 1;
-let b = 2;
-let c = null;
-
-console.log("BEFORE > a is: ", a, " - and b is: ", b);
-
- a = b;
- b = a;
- c = c;
-
-console.log("AFTER > a is: ", a, " - and b is: ", b);
-
-/*
-11)
-Fes que la següent afirmació resulti "true"!
-*/
-problemNumber(11);
-
-let numero = 3;
-numero++;
-numero++;
-numero > 4;
-
-console.log(3 < 4);
-
-/*
-12)
-Fes que la següent afirmació resulti "false".
-*/
-problemNumber(12);
-
-let x = 10;
-let y = x++;
-
-console.log(x <= y);
-
-/*
-13)
-Soluciona l'operador de comparació per què
-l'afirmació següent resulti "false".
-*/
-problemNumber(13);
-
-console.log(3 === "3");
-
-/*
-14)
-Modifica l'expressió de sota per què
-no resulti "false".
-*/
-problemNumber(14);
-const sunny = true;
-const warm = true;
-
-console.log(sunny !== warm);
-
-/*
-15)
-Practica tot el que has après!
-
-Inventa 10 expressions que facin servir el que
-has après fins ara.
-  - Fer servir els següents data types: `string`, `number`, `boolean`, `undefined` i `null`.
-  - Fer servir els següents operadors: (+) (-) (\*) (/) (%).
-  - Fer servir les paraules clau: var, const, let.
-  - Fer servir els operadors: (=) (+=) (-=) (*=)(++) (- -).
-  - Fer servir els operadors: (>) (<) (>=) (<=) (== vs ===) (!==).
-*/
-
-/*
-14)
-Usando string".
-*/
-problemNumber(15);
-
-const myname = "Suren";
-let othername = "Amanda";
-console.log ( myname != othername);
-
-problemNumber(16);
-let z = 1;
-let q = 3;
-console.log (z > q);
-
-problemNumber(17);
-a += 5;
-console.log (a > b);
-
-problemNumber(18);
-
- a *= 2
-console.log (a === "12")
-
-problemNumber(19);
-
-a = 6;
-b = 3;
-let resto = a % b; 
-let division = a/b;
-console.log (resto == "0")
-console.log (division === 2)
-
-problemNumber(20);
-
-let shushi = null
-let checknull = shushi == null
-console.log (checknull == null)
+//let user2 = {
+    //id: 102,
+    //email: "pedro@dev.com" ,
+   // personalInfo: {
+   // name: Pedro, --> "Pedro"
+   // address: {
+    //line1: "Carrer de CodeOp",
+    //line2:  42
+    //city; "Barcelona",
+    //country: "Spain" ,
+   //}
+   //}
+//}
+/*------------------
+11) ESTE EJERCICIO NO LO ENTIENDO
+Torna a revisar tot el teu codi anterior.
+Descomenta cada línia on hagis fet servir
+la "dot notation" i la "bracket notation"
+i reescriu el codi fent servir el sistema contrari.
+Assegura't de que el teu codi segueix funcionant!
+------------------*/

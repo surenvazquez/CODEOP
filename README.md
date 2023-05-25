@@ -1,14 +1,12 @@
-# Variables i Operadors
+# Objectes (objects)
 
-A aquest repositori practicaràs variables, operadors aritmètics i tipus de dades primitius (primitive data types).
+A aquest repositori practicaràs els conceptes bàsics dels objectes.
 
 ## Objectius
 
-- Fer servir els següents _data types_: `string`, `number`, `boolean`, `undefined` i `null`.
-- Fer servir els següents operadors: (+) (-) (\*) (/) (%).
-- Fer servir les paraules clau: `var`, `const`, `let`.
-- Fer servir els operadors: (=) (+=) (-=) (\*=)(++) (- -).
-- Fer servir els operadors: (>) (<) (>=) (<=) (== vs ===) (!=).
+- Crear objectes
+- Afegir (add), actualitzar (update), recuperar (retrieve) i eliminar (delete) claus/valors (keys/values).
+- Fer servir objectes imbricats (nested objects).
 
 ## Requisits bàsics
 
@@ -37,10 +35,7 @@ Respondre totes les preguntes del fitxer `challenges.js`.
 
 ## Recursos
 
-- [https://www.digitalocean.com/community/tutorials/how-to-do-math-in-javascript-with-operators](https://www.digitalocean.com/community/tutorials/how-to-do-math-in-javascript-with-operators)
-- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
-- [https://medium.freecodecamp.org/javascripts-var-let-and-const-variables-explained-with-a-story-2038e3c6b2f9](https://medium.freecodecamp.org/javascripts-var-let-and-const-variables-explained-with-a-story-2038e3c6b2f9)
-- [https://codeburst.io/javascript-whats-the-difference-between-null-undefined-37793b5bfce6](https://codeburst.io/javascript-whats-the-difference-between-null-undefined-37793b5bfce6)
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 
 ## Notes
 
