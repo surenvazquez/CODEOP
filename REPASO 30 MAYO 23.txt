@@ -1,0 +1,25 @@
+
+
+REPASO DÍA 30 MAYO 20323
+
+
+
+for (let key in car) {
+  carFeatures += car[key] + ', ';
+}
+carFeatures += '*'
+carFeatures = carFeatures.replace(', *', '.')
+let timeTaken = Date.now() - start;
+console.log("Total time taken : " + timeTaken + " milliseconds");
+
+carFeatures= ""
+start = Date.now();
+for (let key in car) {
+  carFeatures += car[key] + ', ';
+
+
+}
+carFeatures = carFeatures.substring(0,-2)
+carFeatures += '.'
+timeTaken = Date.now() - start;
+console.log("Total time taken 3 : " + timeTaken + " milliseconds");

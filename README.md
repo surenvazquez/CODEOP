@@ -1,14 +1,31 @@
-# Tailwind CSS
+# Objectives
+- [ ] Creeu un document HTML vàlid amb una sintaxi vàlida. Només un body, un head, etc.
+- [ ] Utilitzar correctament els elementsHTML: h1-h6, button, a, nav, ul, li. fan un bon ús de l'HTML semàntic. 
+- [ ] La sintaxi es pot validar amb un HTML comprovat.
+- [ ] Replica el disseny de la millor manera possible en la seva mida "d'escriptori". feu un ús correcte dels colors de Tailwind, extreu les classes de components amb @apply (si cal)
+- [ ] Ús correcte de CSS grid i Flexbox quan sigui necessari (flexbox per a components, quadrícula per a la disposició, en general)
 
-En aquesta activitat replicaràs un disseny utilitzant **només** classes del _framework_ Tailwind CSS.
+# Front End - Projecte 1
 
-## Objectius
+Escull un dels següents dissenys de pàgina web per composar-lo fent servir els coneixements d'HTML i CSS que hem après en les darreres dues setmanes:
 
-- Fer funcionar Tailwind CSS en un projecte HTML + CSS bàsic.
-- Familiaritzar-se amb les classes de Tailwind CSS.
-- Entendre l'enfoc _utility first_, com a contraposició a l'enfoc _component based_.
-- Aplicar la directiva `@apply` per a crear components CSS reutilitzables.
-- Crear dissenys responsius mitjançant les variants de Tailwind CSS.
+| **Títol**                        | **Enllaç**                                               |
+| -------------------------------- | -------------------------------------------------------- |
+| Travel Agency Website            | https://www.figma.com/community/file/1054354333817536175 |
+| Furniture Landing Page           | https://www.figma.com/community/file/1061732519182077733 |
+| Creative Agency UI Kit           | https://www.figma.com/community/file/1062442619500586015 |
+| iBuy - ecommerce website         | https://www.figma.com/community/file/1061279717553788561 |
+| Finance Website Concept          | https://www.figma.com/community/file/1060098483912933594 |
+| Agency Landing Page              | https://www.figma.com/community/file/1060934768189771297 |
+| Digital Agency Website           | https://www.figma.com/community/file/1058842196634115002 |
+| Product Landing Page             | https://www.figma.com/community/file/1059550415816505412 |
+| Agency Web - Landing page design | https://www.figma.com/community/file/1058767686059595687 |
+| Tours & Adventures Landing Page  | https://www.figma.com/community/file/1047352358177936736 |
+| Gaming Platform                  | https://www.figma.com/community/file/1058773912152023976 |
+| Simple Agency Web                | https://www.figma.com/community/file/1058777711359033259 |
+| Creative Freelance Portfolio     | https://www.figma.com/community/file/1055585500471619711 |
+| Travel Website Landing Page      | https://www.figma.com/community/file/993910904620677970  |
+| Task manager web design          | https://www.figma.com/community/file/1017688084974860884 |
 
 ## Configuració
 
@@ -18,54 +35,6 @@ A la teva terminal,
 2. Executa `npm start` per inicialitzar Tailwind i compilar-ne les classes automàticament.
 
 **IMPORTANT!** A partir d'aquest moment, la terminal quedarà "bloquejada", degut a que hi ha un programa funcionant. Això vol dir que no podràs utilitzar aquesta finestra de la terminal per a fer, per exemple, `git commit`. Hauràs d'obrir una altra finestra per a fer-ho!
-
-## Exercicis
-
-En aquest exercici replicaràs un disseny en diferents mides de pantalla.
-
-Començaràs maquetant la mida "gran", i aniràs maquetant mides més petites posteriorment.
-
-### Part 1
-
-Intenta replicar aquest disseny utilitzant només classes de Tailwind CSS.
-
-Hauràs de crear el contingut HTML, i afegir les classes CSS als seus elements.
-
-![Exercici 1](img/ex1.png)
-
-1. Comença definint els elements de _layout_ més externs: barra de navegació a dalt, menú a l'esquerra, zona central, i columna a la dreta.
-
-2. Després, ves afegint detalls a cadascuna d'aquestes zones. Pots començar per la zona central: Afegeix tres botons a dalt, després afegeix una "card", i així successivament.
-
-3. Afegeix detalls a la capçalera: input de cerca, botó a la dreta, etc.
-
-4. Afegeix el menú a l'esquerra, i estila'n els ítems.
-
-5. Completa la columan de la dreta: Afegeix una card, i elements a dins.
-
-6. Poleix el disseny tant com puguis per a què s'assembli el màxim al disseny proporcionat.
-
-### Part 2
-
-Quant fem la pantalla més petita, la columna de la dreta desapareix:
-
-![Exercici 2](img/ex2.png)
-
-### Part 3
-
-Quant fem la pantalla més petita, el menú de l'esquerra també despapareix. Apareix, en canvi, un menú d'hamburguesa a dalt a la dreta.
-
-La barra de navegació superior també ha canviat el seu disseny. Pots implementar-lo?
-
-![Exercici 3](img/ex3.png)
-
-### Part 4
-
-Per la mida més petita (mòbil), els tres botons desapareixen, i en el seu lloc hi apareix un menú desplegable.
-
-Fixa't que les _cards_ van d'esquerra a dreta de la pantalla, ocupant tot l'ample.
-
-![Exercici 4](img/ex4.png)
 
 ## Recursos
 

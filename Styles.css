@@ -1,0 +1,77 @@
+
+<style>
+
+.circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(9, 21, 35);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(152, 161, 162);
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* Estilo del footer */
+
+footer {
+  background-color: #1978b4;
+  padding: 10px;
+  text-align: center;
+  color: white;
+
+}
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+
+
+</style>
+
+</head>
+<body>
+
+<style>
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+</style>

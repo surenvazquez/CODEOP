@@ -4,6 +4,9 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-
-  this.padding
 };
+// tailwind.config.js
+module.exports = {
+  darkMode: 'class',
+  // ...
+}
